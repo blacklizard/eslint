@@ -3,6 +3,14 @@
   "version": "1.0.1",
   "description": "Reusable, opinionated ESLint config — blacklizard code standards.",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blacklizard/eslint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/blacklizard/eslint/issues"
+  },
+  "homepage": "https://github.com/blacklizard/eslint#readme",
   "main": "eslint.config.mjs",
   "exports": {
     ".": "./eslint.config.mjs"
