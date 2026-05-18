@@ -1,6 +1,6 @@
 {
   "name": "@blacklizard/eslint-blacklizard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reusable, opinionated ESLint config — blacklizard code standards.",
   "type": "module",
   "main": "eslint.config.mjs",
