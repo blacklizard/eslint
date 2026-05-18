@@ -1,0 +1,60 @@
+{
+  "name": "@blacklizard/eslint-blacklizard",
+  "version": "1.0.0",
+  "description": "Reusable, opinionated ESLint config — blacklizard code standards.",
+  "type": "module",
+  "main": "eslint.config.mjs",
+  "exports": {
+    ".": "./eslint.config.mjs"
+  },
+  "files": [
+    "eslint.config.mjs",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "test": "node --test",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "pnpm lint && pnpm test && git tag \"v$npm_package_version\" && git push --follow-tags"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "shareable-config",
+    "airbnb",
+    "lint",
+    "code-style"
+  ],
+  "author": "blacklizard",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "eslint": ">=9"
+  },
+  "engines": {
+    "node": ">=24",
+    "pnpm": ">=10"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "dependencies": {
+    "@eslint/compat": "^2.1.0",
+    "@eslint/css": "^1.2.0",
+    "@eslint/js": "^9.39.4",
+    "@html-eslint/eslint-plugin": "^0.60.0",
+    "@html-eslint/parser": "^0.60.0",
+    "@typescript-eslint/parser": "^8.59.3",
+    "eslint-config-airbnb-extended": "^3.1.0",
+    "eslint-plugin-better-tailwindcss": "^4.5.0",
+    "eslint-plugin-vue": "^10.9.1",
+    "vue-eslint-parser": "^10.4.0"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.31.0",
+    "eslint": "^9.39.4",
+    "tailwindcss": "^4.3.0"
+  }
+}
